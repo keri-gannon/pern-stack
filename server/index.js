@@ -9,6 +9,8 @@ app.use(express.json()); //req.body
 
 //ROUTES//
 
+// TODO: Verify that db is connected to node, might need to update password
+
 //create a todo
 
 app.post('/todos', async (req, res) => {
