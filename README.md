@@ -28,3 +28,14 @@ To move into a particular database:
 To see the available tables:
 
 - `\dt`
+
+### PGCLI
+
+Package manager used to work with Postgres databases. [Available commands](https://www.pgcli.com/commands).
+
+To show the database:
+- `pgcli -d perntodo`
+
+To show the tables:
+- `\d`
+
