@@ -14,11 +14,11 @@ Following [FreeCodeCamp's PERN Stack Course - Postgres, Express, React, and Node
 
 Create a .env file in `/server` with the following environment variables:
 
-DB_HOST
-DB_NAME
-DB_PASSWORD
-DB_PORT
-DB_USER
+- DB_HOST
+- DB_NAME
+- DB_PASSWORD
+- DB_PORT
+- DB_USER
 
 ### Querying
 
