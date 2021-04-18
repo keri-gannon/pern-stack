@@ -54,3 +54,8 @@ To show the database:
 To show the tables:
 
 - `\d`
+
+## Client
+
+- `cd client`
+- `yarn && yarn dev`
