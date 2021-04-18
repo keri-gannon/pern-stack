@@ -5,8 +5,8 @@ Following [FreeCodeCamp's PERN Stack Course - Postgres, Express, React, and Node
 ## Server
 
 - `cd server/`
-- `npm i`
-- `nodemon index`
+- `yarn`
+- `yarn run start`
 
 ## Database
 
