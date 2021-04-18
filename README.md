@@ -10,6 +10,20 @@ Following [FreeCodeCamp's PERN Stack Course - Postgres, Express, React, and Node
 
 ## Database
 
+### Environment variables
+
+Create a .env file in `/server` with the following environment variables:
+
+DB_HOST
+DB_NAME
+DB_PASSWORD
+DB_PORT
+DB_USER
+
+### Querying
+
+#### psql
+
 - `brew services start postgresql`
 - `psql postgres`
 
@@ -29,13 +43,14 @@ To see the available tables:
 
 - `\dt`
 
-### PGCLI
+#### pgcli
 
 Package manager used to work with Postgres databases. [Available commands](https://www.pgcli.com/commands).
 
 To show the database:
+
 - `pgcli -d perntodo`
 
 To show the tables:
-- `\d`
 
+- `\d`
