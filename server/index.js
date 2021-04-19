@@ -14,12 +14,16 @@ app.use(express.json()); //req.body
 app.post('/todos', async (req, res) => {
   try {
     const { description } = req.body;
+    if (!description) {
+      res.statusCode = 404;
+      res.json({ error: 'Description cannot be empty' });
+      throw new Error('Description cannot be empty');
+    }
     const newTodo = await pool.query(
       'INSERT INTO todo (description) VALUES($1) RETURNING *',
       [description]
     );
-
-    res.json(newTodo.rows[0]);
+    res.json({ todo: newTodo.rows[0] });
   } catch (err) {
     console.error(err.message);
   }
