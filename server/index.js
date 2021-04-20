@@ -14,7 +14,7 @@ app.use(express.json()); //req.body
 app.post('/todos', async (req, res) => {
   try {
     const { description } = req.body;
-    if (!description) {
+    if (!description || !description.length) {
       res.statusCode = 404;
       res.json({ error: 'Description cannot be empty' });
       throw new Error('Description cannot be empty');
